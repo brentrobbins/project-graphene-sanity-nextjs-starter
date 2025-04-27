@@ -14,7 +14,7 @@
     "prepare": "husky install",
     "test": "vitest run --reporter=verbose",
     "test:watch": "vitest --reporter=verbose",
-    "commit": "git-cz"
+    "commit": "commitizen --no-verify"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.0",
