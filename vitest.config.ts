@@ -15,6 +15,15 @@ export default defineConfig({
     coverage: {
       reporter: ['text', 'json', 'html'],
     },
+    environmentOptions: {
+      happyDOM: {
+        settings: {
+          disableJavaScriptEvaluation: false,
+          disableJavaScriptFileLoading: false,
+          disableCSSFileLoading: false,
+        },
+      },
+    },
   },
   esbuild: {
     target: 'esnext',
